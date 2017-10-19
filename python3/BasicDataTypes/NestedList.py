@@ -11,5 +11,3 @@ if __name__ == '__main__':
     scores.remove(minimun)
     second_minimum = min(scores)
     print(*[i[0] for i in sorted(students) if i[1]== second_minimum], sep="\n")
-
-
