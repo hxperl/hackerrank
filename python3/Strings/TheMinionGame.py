@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 def minion_game(string):
     vowels = 'AEIOU'
 
