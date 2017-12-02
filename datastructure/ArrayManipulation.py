@@ -12,9 +12,6 @@ if __name__ == "__main__":
         tmp[a-1] += k
         if b <= len(tmp):
             tmp[b] -= k
-        
-        for z in range(a-1, b):
-            tmp2[z] += k
     qwe = maximum =0
     for i in tmp:
         qwe += i
