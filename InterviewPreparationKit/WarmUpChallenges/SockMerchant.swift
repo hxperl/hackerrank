@@ -2,14 +2,14 @@ import Foundation
 
 // Complete the sockMerchant function below.
 func sockMerchant(n: Int, ar: [Int]) -> Int {
-    var dict: [Int: Int] = [:]
+    var storage = [Int]()
 	var count = 0
     for sock in ar {
-		if dict.keys.contains(sock), let index = dict.index(forKey: sock) {
-			dict.remove(at: index)
+		if storage.contains(sock), let index = storage.firstIndex(of: sock) {
+			storage.remove(at: index)
 			count += 1
 		} else {
-			dict[sock] = 1
+			storage.append(sock)
 		}
     }
 	return count
